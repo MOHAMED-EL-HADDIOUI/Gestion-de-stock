@@ -1,0 +1,36 @@
+*{
+    align-content: center;
+}
+BorderPane
+{
+    -fx-background-color: rgb(200,200,200);
+}
+.btnAj
+{
+    -fx-background-color: rgb(129,200,19);
+}
+.btnMo
+{
+    -fx-background-color: yellow;
+}
+.btnSu
+{
+    -fx-background-color: red;
+}
+.btnSe
+{
+    -fx-background-color: blue;
+}
+.label{
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-background-color: rgb(180,180,180);
+    -fx-border-color: rgb(0,0,0);
+    -fx-border-radius: 2px;
+}
+TabPane
+{
+    -fx-font-weight: bold;
+    -fx-border-color: rgb(0,0,0);
+
+}

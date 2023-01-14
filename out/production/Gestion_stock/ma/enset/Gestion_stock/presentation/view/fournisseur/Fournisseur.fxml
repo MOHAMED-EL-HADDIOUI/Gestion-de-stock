@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="700.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ma.enset.Gestion_stock.presentation.controllers.MainFournisseurController">
+  <tabs>
+    <Tab text="Liste des Produits">
+      <content>
+        <fx:include source="Liste_produits.fxml" />
+      </content>
+    </Tab>
+    <Tab text="Ajouter categorie">
+      <content>
+        <fx:include source="AddCategorie.fxml" />
+      </content>
+    </Tab>
+    <Tab text="Messager">
+      <content>
+        <fx:include source="Messager_Fournisseur.fxml" />
+      </content>
+    </Tab>
+    <Tab text="Commandes Reçues">
+      <content>
+        <fx:include source="Commandes_Fournisseur.fxml" />
+      </content>
+    </Tab>
+    <Tab text="Profil">
+      <content>
+        <fx:include source="Profil.fxml" />
+      </content>
+    </Tab>
+    
+    
+  </tabs>
+</TabPane>

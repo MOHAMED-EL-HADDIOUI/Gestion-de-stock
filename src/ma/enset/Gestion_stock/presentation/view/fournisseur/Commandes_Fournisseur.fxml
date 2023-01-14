@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="Profile" minWidth="500.0" prefHeight="600.0" prefWidth="700.0" styleClass="background" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ma.enset.Gestion_stock.presentation.controllers.Commandes_Fournisseur_Controller">
+  <children>
+      <TableView fx:id="tableView" layoutX="7.0" layoutY="48.0" prefHeight="539.0" prefWidth="687.0">
+         <columns>
+            <TableColumn fx:id="colClient" prefWidth="144.0" text="Client" />
+            <TableColumn fx:id="colProduit" prefWidth="171.0" text="Produit" />
+            <TableColumn fx:id="colDatecommande" prefWidth="212.0" text="Date de commande" />
+            <TableColumn fx:id="colQuantite" prefWidth="158.0" text="Quantite" />
+         </columns>
+      </TableView>
+  </children>
+  <stylesheets>
+    <URL value="@Login.css" />
+  </stylesheets>
+</AnchorPane>

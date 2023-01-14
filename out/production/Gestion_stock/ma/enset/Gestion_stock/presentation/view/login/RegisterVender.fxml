@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="Profile" minWidth="500.0" prefHeight="600.0" prefWidth="700.0" styleClass="background" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ma.enset.Gestion_stock.presentation.controllers.RegisterVenderController">
+  <stylesheets>
+    <URL value="@Login.css" />
+  </stylesheets>
+   <children>
+      <AnchorPane prefHeight="82.0" prefWidth="700.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <ImageView fx:id="shildImageView" fitHeight="42.0" fitWidth="69.0" layoutX="32.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/icon-register.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="93.0" layoutY="20.0" prefHeight="42.0" prefWidth="264.0" text="Vender registration">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="28.0" layoutY="128.0" text="First Name" />
+      <TextField fx:id="firstnameTextField" layoutX="188.0" layoutY="123.0" prefHeight="25.0" prefWidth="336.0" promptText="First Name">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <Label layoutX="31.0" layoutY="179.0" text="Tel" />
+      <TextField fx:id="telTextField" layoutX="188.0" layoutY="174.0" prefHeight="25.0" prefWidth="336.0" promptText="Tel">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <Label layoutX="31.0" layoutY="235.0" text="Address" />
+      <TextField fx:id="adressnameTextField" layoutX="188.0" layoutY="230.0" prefHeight="25.0" prefWidth="336.0" promptText="Address">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <Label layoutX="31.0" layoutY="282.0" text="Gmail" />
+      <TextField fx:id="gmailTextField" layoutX="188.0" layoutY="277.0" prefHeight="25.0" prefWidth="336.0" promptText="Gmail">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <Label layoutX="31.0" layoutY="328.0" text="Password" />
+      <PasswordField fx:id="setPasswordField" layoutX="188.0" layoutY="323.0" prefHeight="25.0" prefWidth="336.0" promptText="Password" />
+      <PasswordField fx:id="confirmPasswordField" layoutX="188.0" layoutY="394.0" prefHeight="25.0" prefWidth="336.0" promptText="Confirm Password" />
+      <Label layoutX="30.0" layoutY="399.0" text="Confirm Password" />
+      <Button fx:id="registerButton" layoutX="188.0" layoutY="461.0" mnemonicParsing="false" onAction="#registerButtononAction" prefHeight="25.0" prefWidth="336.0" text="Register">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="closeButton" layoutX="188.0" layoutY="524.0" mnemonicParsing="false" onAction="#closeButtonOnAction" prefHeight="25.0" prefWidth="336.0" text="Close">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Label fx:id="registrationMessageLabel" alignment="CENTER" layoutX="101.0" layoutY="82.0" prefHeight="30.0" prefWidth="511.0" textAlignment="CENTER" textFill="#412ad7" wrapText="true">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="confirmPasswordLabel" alignment="CENTER" layoutX="107.0" layoutY="360.0" prefHeight="30.0" prefWidth="493.0" textAlignment="CENTER" textFill="#f52411" wrapText="true">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<?import javafx.scene.control.ComboBox?>
+<AnchorPane id="Profile" minWidth="500.0" prefHeight="600.0" prefWidth="700.0" styleClass="background" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ma.enset.Gestion_stock.presentation.controllers.MessageFournisseur">
+  <children>
+      <TableView fx:id="tableView" layoutX="4.0" layoutY="256.0" prefHeight="337.0" prefWidth="690.0">
+         <columns>
+            <TableColumn fx:id="colDateMessage" prefWidth="140.0" text="Date de messge" />
+            <TableColumn fx:id="colClient" prefWidth="141.0" text="Client" />
+            <TableColumn fx:id="colEmetteur" prefWidth="104.0" text="Émetteur" />
+            <TableColumn fx:id="colMessage" prefWidth="304.0" text="Message" />
+         </columns>
+      </TableView>
+      <VBox id="VBox" alignment="CENTER" layoutX="-1.0" layoutY="8.0" prefHeight="220.0" prefWidth="700.0" spacing="5.0">
+         <children>
+            <GridPane id="GridPane" hgap="15.0" prefHeight="120.0" prefWidth="700.0" vgap="15.0">
+               <children>
+                  <Label id="Label" text="Client :" GridPane.columnIndex="0">
+                     <GridPane.margin>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" fx:id="x3" />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="20.0" fx:id="x1" />
+                     </font>
+                  </Label>
+                  <Label id="Label" font="$x1" text="Message :" GridPane.columnIndex="0" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <TextArea fx:id="message" prefHeight="60.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets bottom="20.0" left="50.0" right="50.0" top="20.0" />
+                     </GridPane.margin>
+                  </TextArea>
+                  <ComboBox fx:id="client" prefHeight="32.0" prefWidth="220.0" GridPane.columnIndex="1">
+                     <GridPane.margin>
+                        <Insets bottom="20.0" left="50.0" right="50.0" top="20.0" />
+                     </GridPane.margin>
+                  </ComboBox>
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints hgrow="NEVER" minWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="47.0" minHeight="10.0" prefHeight="47.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="84.0" minHeight="10.0" prefHeight="52.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </GridPane>
+            <HBox prefHeight="60.0" prefWidth="700.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#addChat" styleClass="btnAj" text="Envoyer">
+                     <HBox.margin>
+                        <Insets bottom="20.0" left="40.0" right="40.0" top="20.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Label text="Rechercher">
+                     <HBox.margin>
+                        <Insets bottom="20.0" left="60.0" right="30.0" top="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="rechercher" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="41.0" prefWidth="200.0">
+                     <HBox.margin>
+                        <Insets bottom="20.0" left="30.0" right="30.0" top="20.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+  </children>
+  <stylesheets>
+    <URL value="@Login.css" />
+  </stylesheets>
+</AnchorPane>
